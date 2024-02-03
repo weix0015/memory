@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1>Memory Game</h1>
+  <main>
+    <button id="reset-game">Reset Game</button>
+    <div id="board">
+    <div id="scores">
+      <div id="tries">Tries: <span>0</span></div>
+      <div id="matches">Matches: <span>0</span></div>
+    </div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+      <div class="card"><img src="images/sw0268.png" alt=""></div>
+    </div>
+    <div id="gameover" class="hide">
+      <h1>Game Over</h1>
+      <p>You found every match!</p>
+    </div>
+  </main>
+  <audio id="card-click-sound" src="audio/card-click.mp3"></audio>
+  <audio id="match-sound" src="audio/match-sound.mp3"></audio>
+  <audio id="no-match-sound" src="audio/no-match-sound.mp3"></audio>
+  <audio id="win-sound" src="audio/won.mp3"></audio>
+  <script src="script.js"></script>
+  </body>
+  </html>

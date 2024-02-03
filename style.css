@@ -1,0 +1,96 @@
+body {
+  background-color: #666;
+  color: #80d080;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 25%;
+}
+
+main {
+    position: relative;
+    width: max-content;
+}
+
+#reset-game {
+  background-color: #80d080;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#reset-game:hover {
+  background-color: #45a049;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  gap: 1.3em;
+}
+
+.card {
+  display: grid;
+  position: relative;
+  width: 10em;
+  border: 1em solid #ccc;
+  background-color: #ccc;
+  border-radius: .6em;
+  box-shadow: 4px 4px 10px #333;
+}
+
+.card img {
+  width: 100%;
+  border-radius: .3em;
+}
+
+.card:not(.selected)::before {
+    content: "";
+    background-color: plum;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.selected {
+  scale: 1.05;
+  box-shadow: 12px 12px 20px #333;
+  outline: 1px solid orange;
+}
+
+#scores {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: flex;
+  justify-content: space-between;
+  font-size: 220%;
+}
+
+#gameover {
+    background-color: rgba(100, 100, 100, 0.6);
+    font-size: 450%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameover h1 {
+    margin: 0;
+}
+
+.hide {
+    visibility: hidden;
+}
